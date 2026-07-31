@@ -1,0 +1,39 @@
+name: Report a problem
+description: Report a dead link, inaccurate description, unsafe resource, or categorization issue.
+title: "Fix: "
+labels:
+  - maintenance
+body:
+  - type: dropdown
+    id: problem
+    attributes:
+      label: Problem type
+      options:
+        - Dead or redirected link
+        - Inaccurate or outdated description
+        - Duplicate entry
+        - Wrong category
+        - Archived or unmaintained resource
+        - Potentially unsafe resource
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: resource
+    attributes:
+      label: Resource or section
+      placeholder: Name of the entry or heading
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details and evidence
+      description: Include a replacement URL or primary evidence when possible.
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        If the report involves malware, credential theft, or an exploitable automation issue, stop here and follow `SECURITY.md`.
+

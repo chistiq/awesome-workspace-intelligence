@@ -1,0 +1,16 @@
+{
+  "name": "awesome-workspace-intelligence",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Validation tools for the Awesome Workspace Intelligence list.",
+  "type": "module",
+  "scripts": {
+    "check": "node scripts/validate.mjs",
+    "test": "npm run check"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "CC0-1.0"
+}
+

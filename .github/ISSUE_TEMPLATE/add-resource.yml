@@ -1,0 +1,84 @@
+name: Suggest a resource
+description: Propose one tool, project, paper, standard, guide, or other resource.
+title: "Add: "
+labels:
+  - suggestion
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the list. One resource per issue keeps review fast.
+  - type: input
+    id: name
+    attributes:
+      label: Resource name
+      placeholder: Example Project
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Primary URL
+      description: Prefer the official repository, specification, paper, or documentation.
+      placeholder: https://github.com/example/project
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Best-fit category
+      options:
+        - Foundations and architecture
+        - Workspace discovery and inventory
+        - Repository and code understanding
+        - Workspace models and software graphs
+        - Change and impact intelligence
+        - Policies and verification
+        - AI context and agents
+        - Protocols and integrations
+        - Evaluation and benchmarks
+        - Research and learning
+        - Related lists
+        - Unsure
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Why is it useful?
+      description: Explain which software-system question it helps answer and what distinguishes it.
+      placeholder: Two or three factual sentences are enough.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Quality evidence
+      description: Point to documentation, a specification, a paper, active releases, or meaningful adoption.
+    validations:
+      required: true
+  - type: dropdown
+    id: affiliation
+    attributes:
+      label: Are you affiliated with this resource?
+      options:
+        - "No"
+        - "Yes — I will explain below"
+    validations:
+      required: true
+  - type: textarea
+    id: disclosure
+    attributes:
+      label: Affiliation disclosure
+      description: If yes, briefly describe your role. Self-submissions are welcome.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched the README and open issues for duplicates.
+          required: true
+        - label: The URL is not an affiliate, referral, or tracking link.
+          required: true
+        - label: The resource is within the published scope.
+          required: true
