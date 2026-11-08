@@ -112,6 +112,7 @@ materially stronger and interoperable with the rest of the system.
 - [dependency-cruiser](https://github.com/sverweij/dependency-cruiser) - Validates JavaScript and TypeScript dependency rules and exports module graphs for architecture analysis.
 - [jQAssistant](https://github.com/jQAssistant/jqassistant) - Scans software structures into Neo4j and evaluates executable architecture concepts and constraints.
 - [Repowise](https://github.com/repowise-dev/repowise) - Connects code and dependency graphs with Git history, generated documentation, architecture decisions, health, and change-risk evidence.
+- [Veripsa Core](https://github.com/RollNuts/veripsa) - Builds structural-coupling graphs and compares linked file pairs with Git co-change history through an offline evaluator for Python repositories.
 - [Workspai](https://github.com/chistiq/workspai) - Builds a canonical workspace model and a revision-bound, proof-backed software graph for impact, verification, and bounded agent context.
 
 ### Infrastructure and Operational Graphs
